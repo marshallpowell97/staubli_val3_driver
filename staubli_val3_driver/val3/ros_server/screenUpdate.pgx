@@ -30,24 +30,6 @@
     // clear screen
     call libInterface:clearScreen()
     
-    // @TODO: Remove all code related to velocity overwrite
-    //    // toggle velocity overwrite upon release of F1 key
-    //    l_nKey = getKey(scMonitor)
-    //    call libQueueFuncs:getNumElems(qMoveBuffer,l_nElems)
-    //    if (l_nKey == 277 and bOverwriteVel == false)
-    //      if (l_nElems == 0)
-    //        bOverwriteVel = true
-    //      else
-    //        popUpMsg("Motion buffer not empty; cannot enable V/OW")
-    //      endIf
-    //    elseIf (l_nKey == 278 and bOverwriteVel == true)
-    //      if (l_nElems == 0)
-    //        bOverwriteVel = false
-    //      else
-    //        popUpMsg("Motion buffer not empty; cannot disable V/OW")
-    //      endIf
-    //    endIf
-    
     // update connection status on port 11000
     call libInterface:motionStatus(nInConnFlag)
     
@@ -61,9 +43,6 @@
     // do the same for move buffer
     call libQueueFuncs:getNumElems(qMoveBuffer,l_nElems)
     call libInterface:motionBuffer(l_nElems,nPtsPopped)
-    
-    // display velocity overwrite status
-    call libInterface:velOverwrite(bOverwriteVel)
     
     // display nMoveId and nMotionProgress
     call libInterface:motionProgress(nMoveId,nMotionProgress)
