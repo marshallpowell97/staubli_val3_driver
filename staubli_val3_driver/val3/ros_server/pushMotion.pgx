@@ -6,8 +6,6 @@
     </Parameters>
     <Locals>
       <Local name="l_bOk" type="bool" xsi:type="array" size="1" />
-      <Local name="l_nCounter" type="num" xsi:type="array" size="1" />
-      <Local name="l_nJointError" type="num" xsi:type="array" size="1" />
       <Local name="l_mTrajPt" type="MotionCmd" xsi:type="array" size="1" />
     </Locals>
     <Code><![CDATA[begin

@@ -2,7 +2,6 @@
 <Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
   <Program name="screenUpdate" access="public">
     <Locals>
-      <Local name="l_nKey" type="num" xsi:type="array" size="1" />
       <Local name="l_nExecStatus" type="num" xsi:type="array" size="1" />
       <Local name="l_nElems" type="num" xsi:type="array" size="1" />
     </Locals>
