@@ -87,9 +87,6 @@
   nInConnFlag = 0
   nOutConnFlag = 0
   
-  // flag defining whether velocity to be overwritten to max. vel.
-  bOverwriteVel = false
-  
   nPtsPopped = 0
   nMovePts = 0
 
