@@ -13,7 +13,6 @@
     <Program file="start.pgx" />
     <Program file="stop.pgx" />
     <Program file="trajBuffer.pgx" />
-    <Program file="velOverwrite.pgx" />
   </Programs>
   <Database>
     <Data file="interfaceCS8.dtx" />
